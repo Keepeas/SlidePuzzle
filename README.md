@@ -1,5 +1,6 @@
 # SlidePuzzle
 Scripts to help in automating a slide puzzle game hosted here: https://puzzles.getbackup.tv/
+
 When I first looked at the game, all the high scorers were clearly automating the game.
 I wanted to see if I could automate it faster... I did and here is the code that I made to help me do it.
 

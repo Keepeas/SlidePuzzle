@@ -29,29 +29,13 @@ FinalMoveTileArray = []
 #Checks if Input command is valid under the current puzzle state
 def MoveDirValid(d):
     if(d == "right"):
-        if(blankCol >= maxCol):
-            return False
-        else:
-            return True
-        print("r")
+        return not (blankCol >= maxCol)
     elif (d == "left"):
-        if(blankCol <= 0):
-            return False
-        else:
-            return True
-        print("l")
+        return not (blankCol <= 0)
     elif (d == "up"):
-        if(blankRow <= 0):
-            return False
-        else:
-            return True
-        print("u")
+        return not (blankRow <= 0)
     elif (d == "down"):
-        if(blankRow >= maxRow):
-            return False
-        else:
-            return True
-        print("d")
+        return not (blankRow >= maxRow)
     else:
         print("Error: Invalid Direction String : ",d)
         return False
